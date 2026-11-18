@@ -1,0 +1,11 @@
+
+# Vidéos (trop lourdes pour le dépôt)
+*.mkv
+*.mp4
+*.webm
+*.mov
+*.m4v
+*.avi
+
+# APK compilés (> 100 Mo, refusés par GitHub)
+*.apk

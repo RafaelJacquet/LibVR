@@ -1,0 +1,10 @@
+{
+  "name": "bibliotheque-vr",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bibliothèque de vidéos 360° en VR (WebXR, suivi des mains) — prototype avant portage Unity",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs 8080"
+  }
+}

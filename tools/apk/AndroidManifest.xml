@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Lanceur hors-ligne de la Bibliothèque VR pour Meta Quest.
+  L'APK embarque tout le site (vidéos comprises), le sert sur http://localhost:8723
+  depuis un service de premier plan, puis ouvre ce site dans le Quest Browser (WebXR).
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.frenchflair.libvr">
+
+    <!-- nécessaire pour ouvrir un port, même en local -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:label="Bibliothèque VR"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false">
+
+        <activity
+            android:name=".LauncherActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".ServerService"
+            android:exported="false" />
+    </application>
+</manifest>

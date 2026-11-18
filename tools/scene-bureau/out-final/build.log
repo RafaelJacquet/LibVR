@@ -1,0 +1,237 @@
+[    0.0s] Textures
+\\wsl.localhost\Ubuntu-20.04\home\rjacquet\FrenchFlair\LibVR\tools\scene-bureau\build_scene.py:99: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+[    2.1s] Bâtiment
+[    2.2s] Salle vitrée
+[    2.2s] Mobilier
+[   11.5s] Éclairage
+[   11.5s] Voilages
+[   11.5s] Plantes
+16:17:42 | INFO: Data are loaded, start creating Blender stuff
+16:17:42 | INFO: Blender create Mesh node Circle
+16:17:42 | INFO: Blender create Mesh node Circle.001
+16:17:42 | INFO: Blender create Mesh node low.008
+16:17:43 | INFO: glTF import finished in 0.59s
+[   13.2s]       potted_plant_02_dirt                 2,157 tri
+[   13.4s]       potted_plant_02_leaves               7,483 tri
+[   13.6s]       potted_plant_02_pot                  5,145 tri
+16:17:44 | INFO: Data are loaded, start creating Blender stuff
+16:17:44 | INFO: Blender create Mesh node Circle
+16:17:44 | INFO: Blender create Mesh node Circle.001
+16:17:44 | INFO: Blender create Mesh node low.008
+16:17:44 | INFO: glTF import finished in 0.36s
+[   14.7s]       potted_plant_02_dirt.001             2,157 tri
+[   15.0s]       potted_plant_02_leaves.001           7,483 tri
+[   15.1s]       potted_plant_02_pot.001              5,145 tri
+16:17:45 | INFO: Data are loaded, start creating Blender stuff
+16:17:45 | INFO: Blender create Mesh node mesh.001
+16:17:46 | INFO: Blender create Mesh node Plane.002
+16:17:46 | INFO: Blender create Mesh node Circle.001
+16:17:46 | INFO: Blender create Mesh node Circle
+16:17:46 | INFO: Blender create Mesh node Cylinder.027
+16:17:46 | INFO: Blender create Mesh node Cylinder.118
+16:17:46 | INFO: Blender create Mesh node Cylinder.092
+16:17:46 | INFO: Blender create Mesh node Cylinder.051
+16:17:46 | INFO: glTF import finished in 0.65s
+[   16.1s]       pachira_aquatica_01_bark_a           4,034 tri
+[   16.3s]       pachira_aquatica_01_bark_b             175 tri
+[   16.5s]       pachira_aquatica_01_bark_c           1,048 tri
+[   16.7s]       pachira_aquatica_01_bark_d           1,128 tri
+[   16.9s]       pachira_aquatica_01_leaves_a         2,913 tri
+[   17.1s]       pachira_aquatica_01_leaves_b         1,352 tri
+[   17.4s]       pachira_aquatica_01_leaves_c         5,115 tri
+[   17.7s]       pachira_aquatica_01_leaves_d         7,302 tri
+16:17:48 | INFO: Data are loaded, start creating Blender stuff
+16:17:48 | INFO: Blender create Mesh node potted_plant_01_base_low
+16:17:48 | INFO: Blender create Mesh node Circle.008
+16:17:48 | INFO: Blender create Mesh node Circle.002
+16:17:48 | INFO: Blender create Mesh node Plane.070
+16:17:49 | INFO: glTF import finished in 1.04s
+[   20.4s]       potted_plant_01_leaves              12,827 tri
+[   21.2s]       potted_plant_01_pebbles              2,275 tri
+[   21.3s]       potted_plant_01_pot                  5,438 tri
+[   21.5s]       potted_plant_01_stem                   840 tri
+16:17:52 | INFO: Data are loaded, start creating Blender stuff
+16:17:52 | INFO: Blender create Mesh node potted_plant_01_base_low
+16:17:52 | INFO: Blender create Mesh node Circle.008
+16:17:52 | INFO: Blender create Mesh node Circle.002
+16:17:52 | INFO: Blender create Mesh node Plane.070
+16:17:53 | INFO: glTF import finished in 0.72s
+[   23.9s]       potted_plant_01_leaves.001          12,828 tri
+[   24.7s]       potted_plant_01_pebbles.001          2,275 tri
+[   24.8s]       potted_plant_01_pot.001              5,438 tri
+[   25.0s]       potted_plant_01_stem.001               839 tri
+16:17:55 | INFO: Data are loaded, start creating Blender stuff
+16:17:55 | INFO: Blender create Mesh node Cylinder.003
+16:17:56 | INFO: glTF import finished in 0.26s
+[   25.6s]       ceramic_vase_02                      2,781 tri
+16:17:56 | INFO: Data are loaded, start creating Blender stuff
+16:17:56 | INFO: Blender create Mesh node Circle
+16:17:56 | INFO: Blender create Mesh node Circle.001
+16:17:56 | INFO: Blender create Mesh node low.008
+16:17:56 | INFO: glTF import finished in 0.37s
+[   26.7s]       potted_plant_02_dirt.002             2,157 tri
+[   26.9s]       potted_plant_02_leaves.002           5,346 tri
+[   27.1s]       potted_plant_02_pot.002              5,145 tri
+[   27.1s] Monde
+\\wsl.localhost\Ubuntu-20.04\home\rjacquet\FrenchFlair\LibVR\tools\scene-bureau\build_scene.py:746: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+[   27.3s] Ciel
+[   29.1s] Fusion par matériau
+[   31.0s]    VC_Plants                     110,826 triangles
+[   31.0s]    LM_Black                       49,164 triangles
+[   31.0s]    LM_Fabric                      10,944 triangles
+[   31.0s]    LM_Linen                        7,992 triangles
+[   31.0s]    UNLIT_Sky                       3,968 triangles
+[   31.0s]    LM_Chrome                       5,976 triangles
+[   31.2s] Objets : 19 | triangles : 202190
+[   31.2s] UV de lightmap
+[   41.2s] Occupation de la lightmap : 55 %
+[   41.2s] Précalcul : 4096px, 256 échantillons
+00:45.766  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+[   41.3s] Calcul sur OPTIX NVIDIA GeForce GTX 1650 Ti
+00:45.906  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+00:45.906  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+[  950.3s] Précalcul terminé en 909s
+[  950.3s] Précalcul des plantes (par sommet)
+17:26.859  render           | Saved: '\\wsl.localhost\Ubuntu-20.04\home\rjacquet\FrenchFlair\LibVR\tools\scene-bureau\out-final\lightmap_denoised.exr'
+[ 1048.5s] Débruitage OIDN : 31s
+[ 1059.9s] Exposition 5.052, p60=0.2138
+[ 1060.6s] Plantes : éclairage moyen 0.499
+[ 1060.6s] Préparation de l'export
+[ 1061.5s] Export glTF
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+16:35:12 | INFO: Starting glTF 2.0 export
+16:35:12 | INFO: Extracting primitive: EcranCoque
+16:35:13 | INFO: Primitives created: 1
+16:35:13 | INFO: Extracting primitive: ChaiseCoqueAssise
+16:35:13 | INFO: Primitives created: 1
+16:35:13 | INFO: Extracting primitive: PotPachira
+16:35:13 | INFO: Primitives created: 1
+16:35:13 | INFO: Extracting primitive: ChaiseVerin
+16:35:13 | INFO: Primitives created: 1
+16:35:13 | INFO: Extracting primitive: Voilage
+16:35:13 | INFO: Primitives created: 1
+16:35:13 | INFO: Extracting primitive: ChaiseAssise
+16:35:13 | INFO: Primitives created: 1
+16:35:13 | INFO: Extracting primitive: Sol
+16:35:13 | INFO: Primitives created: 1
+16:35:13 | INFO: Extracting primitive: CadreBas
+16:35:13 | INFO: Primitives created: 1
+16:35:13 | INFO: Extracting primitive: Clavier
+16:35:13 | INFO: Primitives created: 1
+16:35:14 | INFO: Extracting primitive: CanapeSocle
+16:35:14 | INFO: Primitives created: 1
+16:35:14 | INFO: Extracting primitive: Montant
+16:35:14 | INFO: Primitives created: 1
+16:35:14 | INFO: Extracting primitive: low.008
+16:35:14 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+16:35:15 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+16:35:15 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+16:35:15 | INFO: Primitives created: 8
+16:35:15 | INFO: Extracting primitive: Plafond
+16:35:15 | INFO: Primitives created: 1
+16:35:15 | INFO: Extracting primitive: Torus.001
+16:35:15 | INFO: Primitives created: 1
+16:35:15 | INFO: Extracting primitive: VitreSalle
+16:35:15 | INFO: Primitives created: 1
+16:35:15 | INFO: Extracting primitive: Tapis
+16:35:15 | INFO: Primitives created: 1
+16:35:15 | INFO: Extracting primitive: EcranDalle
+16:35:16 | INFO: Primitives created: 1
+16:35:16 | INFO: Extracting primitive: Ciel
+16:35:16 | INFO: Primitives created: 1
+16:35:16 | INFO: Extracting primitive: Vitre
+16:35:16 | INFO: Primitives created: 1
+16:35:16 | INFO: Draco encoder: Encoding mesh Alu.
+16:35:16 | INFO: Draco encoder: Encoding mesh Black.
+16:35:16 | INFO: Draco encoder: Encoding mesh Ceramic.
+16:35:16 | INFO: Draco encoder: Encoding mesh Chrome.
+16:35:16 | INFO: Draco encoder: Encoding mesh Curtain.
+16:35:16 | INFO: Draco encoder: Encoding mesh Fabric.
+16:35:16 | INFO: Draco encoder: Encoding mesh Floor.
+16:35:16 | INFO: Draco encoder: Encoding mesh Frame.
+16:35:16 | INFO: Draco encoder: Encoding mesh Keys.
+16:35:16 | INFO: Draco encoder: Encoding mesh Linen.
+16:35:16 | INFO: Draco encoder: Encoding mesh Oak.
+16:35:16 | INFO: Draco encoder: Encoding mesh Plantes.
+16:35:16 | INFO: Draco encoder: Encoding mesh Plaster.
+16:35:16 | INFO: Draco encoder: Encoding mesh RingLight.
+16:35:16 | INFO: Draco encoder: Encoding mesh Room.
+16:35:16 | INFO: Draco encoder: Encoding mesh Rug.
+16:35:16 | INFO: Draco encoder: Encoding mesh Screen.
+16:35:16 | INFO: Draco encoder: Encoding mesh Sky.
+16:35:16 | INFO: Draco encoder: Encoding mesh Window.
+16:35:17 | INFO: Finished glTF 2.0 export in 4.581618547439575 s
+
+[ 1066.6s] GLB : 12.3 Mo
+[ 1066.6s] FIN
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 3168 vertices, 4752 indices, raw size: 84768, encoded size: 12214, compression ratio: 6.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 44821 vertices, 147492 indices, raw size: 1549972, encoded size: 128855, compression ratio: 12.03
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 240 vertices, 468 indices, raw size: 7656, encoded size: 2054, compression ratio: 3.73
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 9720 vertices, 17928 indices, raw size: 308016, encoded size: 49256, compression ratio: 6.25
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2058 vertices, 8064 indices, raw size: 40824, encoded size: 1813, compression ratio: 22.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 7695 vertices, 32832 indices, raw size: 281124, encoded size: 32599, compression ratio: 8.62
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 4 vertices, 6 indices, raw size: 124, encoded size: 194, compression ratio: 0.64
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2304 vertices, 3456 indices, raw size: 71424, encoded size: 7921, compression ratio: 9.02
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 5184 vertices, 7776 indices, raw size: 133824, encoded size: 18443, compression ratio: 7.26
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 5280 vertices, 23976 indices, raw size: 195792, encoded size: 22288, compression ratio: 8.78
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2150 vertices, 4920 indices, raw size: 70040, encoded size: 10749, compression ratio: 6.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 9395 vertices, 19413 indices, raw size: 301886, encoded size: 88141, compression ratio: 3.43
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 16446 vertices, 60936 indices, raw size: 561416, encoded size: 167286, compression ratio: 3.36
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 14857 vertices, 78933 indices, raw size: 573862, encoded size: 89932, compression ratio: 6.38
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 4262 vertices, 19155 indices, raw size: 157646, encoded size: 31601, compression ratio: 4.99
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 15357 vertices, 50046 indices, raw size: 529864, encoded size: 127425, compression ratio: 4.16
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 29582 vertices, 76965 indices, raw size: 942186, encoded size: 259909, compression ratio: 3.63
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 7965 vertices, 18687 indices, raw size: 260394, encoded size: 77179, compression ratio: 3.37
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2794 vertices, 8343 indices, raw size: 88814, encoded size: 29886, compression ratio: 2.97
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2532 vertices, 5934 indices, raw size: 82764, encoded size: 12938, compression ratio: 6.40
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 585 vertices, 3072 indices, raw size: 17844, encoded size: 1931, compression ratio: 9.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 64 vertices, 288 indices, raw size: 1344, encoded size: 397, compression ratio: 3.39
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 216 vertices, 324 indices, raw size: 5576, encoded size: 1188, compression ratio: 4.69
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 312 vertices, 468 indices, raw size: 9672, encoded size: 1463, compression ratio: 6.61
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2017 vertices, 11904 indices, raw size: 64148, encoded size: 5920, compression ratio: 10.84
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 96 vertices, 432 indices, raw size: 2016, encoded size: 473, compression ratio: 4.26
+
+Blender quit

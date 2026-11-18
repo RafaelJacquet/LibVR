@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#EFEBE4">
+<title>Bibliothèque VR</title>
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face { font-family: "Cormorant Garamond"; font-weight: 500; src: url(assets/fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2"); }
+  @font-face { font-family: "Cormorant Garamond"; font-weight: 500; font-style: italic; src: url(assets/fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2"); }
+  @font-face { font-family: Inter; font-weight: 400; src: url(assets/fonts/inter-latin-400-normal.woff2) format("woff2"); }
+  @font-face { font-family: Inter; font-weight: 500; src: url(assets/fonts/inter-latin-500-normal.woff2) format("woff2"); }
+  @font-face { font-family: Inter; font-weight: 600; src: url(assets/fonts/inter-latin-600-normal.woff2) format("woff2"); }
+
+  :root {
+    --bg: #EFEBE4;                       /* lin */
+    --glass: rgba(250, 248, 244, 0.78);
+    --text: #2A2826;                     /* graphite */
+    --text-dim: rgba(42, 40, 38, 0.66);
+    --text-faint: rgba(42, 40, 38, 0.45);
+    --accent: #9A683D;                   /* chêne */
+    --paper: #F7F4EE;
+    --hairline: rgba(42, 40, 38, 0.14);
+    --serif: "Cormorant Garamond", Georgia, serif;
+    --sans: Inter, "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); color: var(--text); font-family: var(--sans); }
+  #stage canvas { display: block; cursor: grab; touch-action: none; }
+  #stage canvas.dragging { cursor: grabbing; }
+  #stage canvas.hovering { cursor: pointer; }
+
+  .chrome { position: fixed; z-index: 5; pointer-events: none; transition: opacity .6s ease; }
+  .chrome > * { pointer-events: auto; }
+  body.in-xr .chrome { opacity: 0; pointer-events: none; }
+  body.in-xr .chrome > * { pointer-events: none; }
+
+  .brand { top: 28px; left: 32px; }
+  .kicker { font-size: 11px; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: var(--accent); }
+  .brand, .help, .vr { text-shadow: 0 1px 12px rgba(250, 248, 244, 0.8); }
+  .brand h1 { margin: 6px 0 0; font-family: var(--serif); font-weight: 500; font-size: 34px; letter-spacing: .01em; line-height: 1; }
+
+  .help { left: 32px; bottom: 28px; display: flex; gap: 22px; flex-wrap: wrap; font-size: 12.5px; color: var(--text-dim); }
+  .help span { display: inline-flex; align-items: center; gap: 8px; }
+  kbd {
+    font-family: var(--sans); font-size: 11px; font-weight: 500; color: var(--text);
+    border: 1px solid var(--hairline); border-radius: 6px; padding: 3px 7px; background: var(--glass);
+    backdrop-filter: blur(8px);
+  }
+
+  .vr { right: 32px; bottom: 26px; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+  #vr-note { font-size: 12px; color: var(--text-faint); letter-spacing: .02em; }
+  #enter-vr {
+    font: 500 14px var(--sans); letter-spacing: .06em; color: var(--paper); background: var(--text);
+    border: 0; border-radius: 999px; padding: 14px 26px; cursor: pointer;
+    box-shadow: 0 10px 30px rgba(42,40,38,.22); transition: transform .2s ease, background .2s ease;
+  }
+  #enter-vr:hover { transform: translateY(-1px); background: #45413c; }
+  #enter-vr[hidden] { display: none; }
+
+  #loader {
+    position: fixed; inset: 0; z-index: 10; background: var(--bg);
+    display: grid; place-items: center; transition: opacity .9s ease, visibility .9s;
+  }
+  #loader.done { opacity: 0; visibility: hidden; }
+  #loader .inner { text-align: center; }
+  #loader h2 { font-family: var(--serif); font-weight: 500; font-style: italic; font-size: 28px; margin: 10px 0 18px; color: var(--text); }
+  #loader .bar { width: 120px; height: 1px; margin: 0 auto; background: var(--hairline); overflow: hidden; }
+  #loader .bar::after { content: ""; display: block; width: 40%; height: 100%; background: var(--accent); animation: slide 1.4s ease-in-out infinite; }
+  @keyframes slide { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
+
+  @media (max-width: 720px) {
+    .brand { top: 18px; left: 16px; }
+    .brand h1 { font-size: 26px; }
+    .help { display: none; }
+    .vr { right: 16px; bottom: 16px; }
+  }
+</style>
+<script type="importmap">
+{ "imports": {
+    "three": "./vendor/three/three.module.js",
+    "three/addons/": "./vendor/three/addons/"
+} }
+</script>
+</head>
+<body>
+  <div id="stage"></div>
+
+  <header class="chrome brand">
+    <div class="kicker">Expériences immersives</div>
+    <h1>Bibliothèque VR</h1>
+  </header>
+
+  <footer class="chrome help" aria-label="Commandes">
+    <span><kbd>Glisser</kbd> regarder</span>
+    <span><kbd>Espace</kbd> bibliothèque / menu</span>
+    <span><kbd>L</kbd> lieux</span>
+    <span><kbd>Clic</kbd> toucher</span>
+    <span><kbd>Échap</kbd> fermer</span>
+  </footer>
+
+  <div class="chrome vr">
+    <span id="vr-note"></span>
+    <button id="enter-vr" hidden>Entrer en VR</button>
+  </div>
+
+  <div id="loader">
+    <div class="inner">
+      <div class="kicker">Expériences immersives</div>
+      <h2>Bibliothèque</h2>
+      <div class="bar"></div>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
